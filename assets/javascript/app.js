@@ -20,7 +20,7 @@ function makeBtn(character) {
 $("#buttons").on("click", ".character", function() {
     console.log($(this).text());
     var person = $(this).text();
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     person + "&offset=4&api_key=dc6zaTOxFJmzC&limit=10";
 
     // AJAX GET request
